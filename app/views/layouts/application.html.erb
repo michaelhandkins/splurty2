@@ -10,7 +10,7 @@
   </head>
 
   <body>
-
+    <!--- Navbar Begins --->
     <header class="row">
       <div class="col-3">
         <div class="circle">
@@ -34,7 +34,21 @@
 
     </header>
     <hr />
+    <!--- Navbar Ends --->
 
-    <%= yield %>
+    <!--- Individual Page Content --->
+    <div class="container">
+      <%= yield %>
+    </div>
+    <!--- Page Content Ends --->
+
+    <!-- Sticky Footer Begins --->
+    <div class="footer">
+      <div class="container">
+
+      </div>
+    </div>
+    <!--- Sticky Footer Ends --->
+
   </body>
 </html>
