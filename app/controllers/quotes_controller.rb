@@ -3,6 +3,8 @@ class QuotesController < ApplicationController
     @quote = Quote.order("RANDOM()").first
   end
 
-
+  def new
+    
+  end
 
 end
