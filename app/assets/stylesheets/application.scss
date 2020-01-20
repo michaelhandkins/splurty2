@@ -90,3 +90,9 @@ body {
 .logo:hover {
   text-decoration: none;
 }
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
