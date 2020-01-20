@@ -44,13 +44,14 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
-            <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+            
           </div>
           <%= simple_form_for Quote.new do |f| %>
             <div class="modal-body">
               <h1>Enter Your Quote Details</h1>
-                <%= f.input :saying %>
-                <%= f.input :author %>
+                <%= f.input :saying, label: "What is the quote you would like to add?", placeholder: "Fear is the disease. Hustle is the antidote." %>
+                <br />
+                <%= f.input :author, label: "Who is the author of this quote?", placeholder: "Travis Kalanick" %>
                 <br />
             </div>
             <div class="modal-footer">
